@@ -1,0 +1,202 @@
+{
+  "results": [
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "75",
+      "title": "Sexual harassment",
+      "former": "IPC Section 354A",
+      "description": "Covers unwelcome physical contact, a demand or request for sexual favours, showing pornography without consent, and making sexually coloured remarks.",
+      "topics": ["Harassment / threats", "Image-based abuse"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "77",
+      "title": "Voyeurism",
+      "former": "IPC Section 354C",
+      "description": "Watching or capturing the image of a woman doing a private act where she expects privacy, or distributing such an image, even if she had consented only to the image being captured and not shared.",
+      "topics": ["Image-based abuse", "Cyberstalking"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "78",
+      "title": "Stalking",
+      "former": "IPC Section 354D",
+      "description": "Repeatedly following or contacting a woman despite her clear disinterest, or monitoring her internet, email, or electronic communication. Courts have confirmed this covers purely online conduct such as repeated messages on WhatsApp or social media.",
+      "topics": ["Cyberstalking", "Harassment / threats"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "79",
+      "title": "Word, gesture or act intended to insult the modesty of a woman",
+      "former": "IPC Section 509",
+      "description": "Covers a word, sound, gesture, or object intended to insult a woman's modesty, including where it intrudes on her privacy — this can extend to online comments and messages.",
+      "topics": ["Harassment / threats", "Cyberstalking"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "80",
+      "title": "Dowry death",
+      "former": "IPC Section 304B",
+      "description": "Applies when a woman dies from burns, bodily injury, or in otherwise unusual circumstances within 7 years of marriage, and there is evidence of cruelty or harassment for dowry shortly before her death.",
+      "topics": ["Domestic cruelty"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "85",
+      "title": "Cruelty by husband or his relatives",
+      "former": "IPC Section 498A",
+      "description": "Makes it an offence for a husband or his relatives to subject a married woman to cruelty. Read together with Section 86, which defines what counts as cruelty.",
+      "topics": ["Domestic cruelty"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "86",
+      "title": "\"Cruelty\" defined",
+      "former": "Explanation to IPC Section 498A",
+      "description": "Defines cruelty as wilful conduct likely to drive a woman to suicide or cause grave injury, or harassment aimed at coercing her (or her family) to meet an unlawful demand such as dowry.",
+      "topics": ["Domestic cruelty"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "308",
+      "title": "Extortion",
+      "former": "IPC Sections 383–384",
+      "description": "Intentionally putting someone in fear of injury to induce them to hand over money, property, or a signed document — this includes threatening to publish something damaging (such as an image) unless paid.",
+      "topics": ["Online fraud", "Image-based abuse"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "318",
+      "title": "Cheating",
+      "former": "IPC Section 420 and related sections",
+      "description": "Dishonestly inducing a person to deliver property, or to do or omit something they otherwise would not, by deception. Graded by severity; the most serious form still carries up to 7 years' imprisonment.",
+      "topics": ["Online fraud", "Identity theft"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "319",
+      "title": "Cheating by personation",
+      "former": "IPC Sections 416, 419",
+      "description": "Cheating by pretending to be someone else — including a real or entirely invented person — such as impersonating a bank official, a relative, or a fake profile used to defraud someone.",
+      "topics": ["Identity theft", "Online fraud"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "351",
+      "title": "Criminal intimidation",
+      "former": "IPC Sections 503, 506, 507",
+      "description": "Threatening someone with injury to their person, reputation, or property to cause alarm or force them to act (or not act). Threats made anonymously, or to falsely accuse someone of a serious crime, carry higher punishment.",
+      "topics": ["Harassment / threats", "Cyberstalking"]
+    },
+    {
+      "act": "BNS",
+      "act_full": "Bharatiya Nyaya Sanhita, 2023",
+      "section": "356",
+      "title": "Defamation",
+      "former": "IPC Sections 499–500",
+      "description": "Making or publishing a false statement about someone that harms their reputation, whether spoken, written, or posted online. BNS adds community service as an alternate punishment.",
+      "topics": ["Harassment / threats", "Image-based abuse"]
+    },
+    {
+      "act": "BNSS",
+      "act_full": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173",
+      "title": "Registration of FIR, Zero FIR, and e-FIR",
+      "former": "CrPC Section 154",
+      "description": "Any police station must register an FIR for a cognisable offence regardless of where it happened (\"Zero FIR\"), and now also recognises electronic filing (\"e-FIR\") — the informant must sign it within 3 days. For sexual offences, a woman's statement must be recorded by a woman police officer, and the process must be videographed.",
+      "topics": ["Domestic cruelty", "Harassment / threats", "Cyberstalking", "Image-based abuse", "Identity theft", "Online fraud"]
+    },
+    {
+      "act": "BNSS",
+      "act_full": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "173(4)",
+      "title": "Escalating to the SP if police refuse to register an FIR",
+      "former": "CrPC Section 154(3)",
+      "description": "If a police station refuses to register your FIR for a cognisable offence, you can send a written complaint to the Superintendent of Police, who can direct that it be registered and investigated.",
+      "topics": ["Domestic cruelty", "Harassment / threats", "Cyberstalking", "Image-based abuse", "Identity theft", "Online fraud"]
+    },
+    {
+      "act": "BNSS",
+      "act_full": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "section": "175(3)",
+      "title": "Applying to a Magistrate to order an investigation",
+      "former": "CrPC Section 156(3)",
+      "description": "If the police and the SP both fail to act, you can approach a Magistrate directly (usually after showing you tried the police route first) to order that the police investigate.",
+      "topics": ["Domestic cruelty", "Harassment / threats", "Cyberstalking", "Image-based abuse", "Identity theft", "Online fraud"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "43",
+      "title": "Penalty for damage to a computer or computer system",
+      "former": null,
+      "description": "Civil liability (compensation) for unauthorised access, downloading, or damaging data, introducing viruses, or denying access to a computer resource without the owner's permission.",
+      "topics": ["Identity theft", "Online fraud"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "66C",
+      "title": "Identity theft",
+      "former": null,
+      "description": "Fraudulent or dishonest use of another person's password, digital signature, or other unique identification feature — carries up to 3 years' imprisonment and a fine.",
+      "topics": ["Identity theft"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "66D",
+      "title": "Cheating by personation using a computer resource",
+      "former": null,
+      "description": "Cheating someone by pretending to be another person through a computer resource or communication device — e.g. a fake profile, cloned account, or spoofed message used to defraud someone.",
+      "topics": ["Identity theft", "Online fraud", "Cyberstalking"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "66E",
+      "title": "Violation of privacy",
+      "former": null,
+      "description": "Intentionally capturing, publishing, or transmitting an image of a person's private area without consent, in circumstances violating their privacy.",
+      "topics": ["Image-based abuse", "Cyberstalking"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "67",
+      "title": "Publishing or transmitting obscene material electronically",
+      "former": null,
+      "description": "Covers publishing or transmitting obscene material in electronic form — first conviction up to 3 years' imprisonment, rising for repeat offences.",
+      "topics": ["Image-based abuse"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "67A",
+      "title": "Publishing or transmitting sexually explicit material electronically",
+      "former": null,
+      "description": "A more serious offence than Section 67, covering material containing a sexually explicit act — carries higher punishment, up to 5 years on first conviction.",
+      "topics": ["Image-based abuse"]
+    },
+    {
+      "act": "IT Act",
+      "act_full": "Information Technology Act, 2000",
+      "section": "72",
+      "title": "Breach of confidentiality and privacy",
+      "former": null,
+      "description": "Applies when someone who obtained access to personal data under a contract or official duty (e.g. a platform employee, service provider) discloses it without consent.",
+      "topics": ["Identity theft", "Image-based abuse"]
+    }
+  ]
+}

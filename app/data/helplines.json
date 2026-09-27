@@ -1,0 +1,61 @@
+{
+  "_note": "SAMPLE DATA ONLY. Before deploying, have a human verify every number below against the current official source (e.g. the Ministry of Women and Child Development, Ministry of Home Affairs, and each state's WCD department). Wrong numbers on a safety product are actively harmful — do not ship this file unverified.",
+  "national": [
+    {
+      "id": "nat-112",
+      "name": "Emergency Response (ERSS)",
+      "number": "112",
+      "description": "All-India single emergency number for police, fire, and medical emergencies.",
+      "state": null,
+      "hours": "24/7",
+      "kind": "emergency"
+    },
+    {
+      "id": "nat-181",
+      "name": "Women Helpline",
+      "number": "181",
+      "description": "National helpline for women affected by violence, in coordination with local police and support services.",
+      "state": null,
+      "hours": "24/7",
+      "kind": "specialist"
+    },
+    {
+      "id": "nat-1930",
+      "name": "Cyber Crime Helpline",
+      "number": "1930",
+      "description": "National helpline to report financial fraud and cybercrime, including online harassment and image-based abuse.",
+      "state": null,
+      "hours": "24/7",
+      "kind": "specialist"
+    },
+    {
+      "id": "nat-1098",
+      "name": "Childline",
+      "number": "1098",
+      "description": "National helpline for children in distress or danger.",
+      "state": null,
+      "hours": "24/7",
+      "kind": "specialist"
+    }
+  ],
+  "state": [
+    {
+      "id": "st-delhi-women",
+      "name": "Delhi Commission for Women Helpline",
+      "number": "181",
+      "description": "State-level support and case coordination for women in Delhi.",
+      "state": "Delhi",
+      "hours": "24/7",
+      "kind": "specialist"
+    },
+    {
+      "id": "st-maharashtra-women",
+      "name": "Maharashtra State Women's Helpline",
+      "number": "103",
+      "description": "State-level support for women in Maharashtra.",
+      "state": "Maharashtra",
+      "hours": "24/7",
+      "kind": "specialist"
+    }
+  ]
+}

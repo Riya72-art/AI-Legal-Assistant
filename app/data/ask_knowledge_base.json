@@ -1,0 +1,157 @@
+{
+  "_note": "SAMPLE DATA ONLY, for scaffolding. Every entry here should be authored/reviewed by a legal aid professional before production use — this is the content the LLM is allowed to draw on, so its accuracy is the whole safety model.",
+  "entries": [
+    {
+      "id": "kb-cyberstalking-basic",
+      "title": "What counts as cyberstalking",
+      "topic": "Cyberstalking",
+      "category": "Online harm & harassment",
+      "keywords": ["stalking", "following", "tracking", "location", "repeated messages", "won't stop messaging"],
+      "content": "Repeated unwanted contact, tracking, or monitoring online can be cyberstalking, even if each individual message seems minor. What usually matters is the pattern: has this person kept contacting you after you asked them to stop, tried to find out where you are, or monitored your accounts obsessively? You can report this to the Cyber Crime Helpline (1930) or file a police complaint. Keeping screenshots, timestamps, and any location or message history as evidence helps."
+    },
+    {
+      "id": "kb-fake-accounts",
+      "title": "Someone made a fake account impersonating me",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["fake account", "impersonation", "pretending to be me", "fake profile"],
+      "content": "Creating a fake account to impersonate someone, especially to harass them or damage their reputation, can be reported both to the platform (most have an impersonation reporting flow) and to police or the Cyber Crime Helpline (1930). Save screenshots of the fake profile and any messages sent from it before reporting, since accounts can be taken down or edited."
+    },
+    {
+      "id": "kb-image-abuse-basic",
+      "title": "Someone is threatening to share or has shared my images",
+      "topic": "Image-based abuse",
+      "category": "Online harm & harassment",
+      "keywords": ["intimate images", "revenge porn", "threatening to share photos", "leaked photos", "nudes"],
+      "content": "Sharing or threatening to share intimate images without consent is a criminal offence in India. You can report this to the Cyber Crime Helpline (1930), which handles this category specifically, or to police. You can also request removal directly from the platform hosting the content — most major platforms have a dedicated non-consensual intimate imagery reporting flow that doesn't require you to file a police report first. Try to preserve evidence (screenshots, URLs) before requesting takedown, since the content may disappear once reported."
+    },
+    {
+      "id": "kb-domestic-cruelty-basic",
+      "title": "Ongoing cruelty or violence from a partner or family member",
+      "topic": "Domestic cruelty",
+      "category": "Domestic safety",
+      "keywords": ["husband", "in-laws", "beats me", "controlling", "won't let me leave", "abuse at home"],
+      "content": "You can reach a Protection Officer, who can help you file a Domestic Incident Report, connect you to shelter and medical support, and assist with applying for a protection order — without necessarily involving police first, if that isn't safe for you right now. The Women Helpline (181) can direct you to your nearest Protection Officer. If you are in immediate physical danger, call 112."
+    },
+    {
+      "id": "kb-online-fraud-basic",
+      "title": "Someone took money from me or used my identity online",
+      "topic": "Online fraud",
+      "category": "Fraud & identity theft",
+      "keywords": ["scammed", "fraud", "identity theft", "fake loan", "stole my details", "unauthorized transaction"],
+      "content": "Financial fraud and identity theft can be reported to the Cyber Crime Helpline (1930), ideally within 24 hours of noticing unauthorized transactions, since faster reporting improves the chance of freezing or reversing a transaction. You can also report at cybercrime.gov.in. Keep transaction records, messages, and any app/website details."
+    },
+    {
+      "id": "kb-harassment-threats-basic",
+      "title": "Someone is threatening me online",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["threats", "threatening messages", "scared", "he said he would"],
+      "content": "Threatening messages, especially ones that describe specific harm, can be reported to police as criminal intimidation, and to the Cyber Crime Helpline (1930) if delivered online. If a threat feels immediate, call 112. Save the messages exactly as received, including sender details and timestamps, rather than only screenshotting the text."
+    },
+    {
+      "id": "kb-digital-arrest-scam",
+      "title": "Someone called claiming to be police/courier/official and threatened arrest",
+      "topic": "Online fraud",
+      "category": "Fraud & identity theft",
+      "keywords": ["digital arrest", "fake police call", "courier scam", "parcel scam", "video call arrest", "fake officer", "pretending to be police", "pretending to be courier", "pay to avoid arrest"],
+      "content": "\"Digital arrest\" is a common scam: someone calls pretending to be a courier company, police, customs, or another official, claims your name is linked to an illegal parcel or crime, then keeps you on a video call and threatens immediate arrest unless you transfer money. No real police or government agency arrests anyone over a phone or video call, or asks for money to avoid arrest — this is always a scam, however official the caller sounds or looks. If this happens, end the call, do not transfer any money, and report it to the National Cyber Crime Helpline (1930) or at cybercrime.gov.in as soon as possible — faster reporting improves the chance of freezing a transferred payment. Save the caller's number, any screenshots, and details of what was said."
+    },
+    {
+      "id": "kb-identity-theft-basic",
+      "title": "Someone used my identity, documents, or opened an account in my name",
+      "topic": "Identity theft",
+      "category": "Fraud & identity theft",
+      "keywords": ["identity theft", "someone used my identity", "opened account in my name", "stole my identity", "used my documents", "aadhaar misused", "pan card misused"],
+      "content": "If someone has used your personal details or documents (like Aadhaar or PAN) or opened accounts/loans in your name without your knowledge, this is identity theft and a criminal offence. Report it to the National Cyber Crime Helpline (1930) or at cybercrime.gov.in as soon as you notice, especially if any financial transaction is involved — faster reporting improves the chance of freezing money or stopping further misuse. You can also file a police complaint, and inform your bank or the relevant institution directly so they can flag the account. Keep copies of any documents, messages, or transaction records showing the misuse."
+    },
+    {
+      "id": "kb-sim-swap-fraud",
+      "title": "My phone lost network suddenly and money left my account",
+      "topic": "Identity theft",
+      "category": "Fraud & identity theft",
+      "keywords": ["sim swap", "sim card stopped working", "otp fraud", "lost mobile network suddenly", "duplicate sim", "sim blocked without reason"],
+      "content": "SIM swap fraud happens when a scammer tricks your telecom provider into issuing a duplicate SIM card for your number, often after collecting your personal details through phishing, then uses OTPs sent to that new SIM to access your bank accounts. A common warning sign is your phone suddenly losing network without explanation. If this happens, contact your bank immediately to freeze transactions, contact your telecom provider to block the duplicate SIM, and report to the National Cyber Crime Helpline (1930) or cybercrime.gov.in right away — speed matters, since money can be withdrawn quickly once the fraudster has OTP access."
+    },
+    {
+      "id": "kb-phishing-basic",
+      "title": "I clicked a suspicious link or shared an OTP/password by mistake",
+      "topic": "Online fraud",
+      "category": "Fraud & identity theft",
+      "keywords": ["phishing", "fake link", "fake email", "clicked a suspicious link", "fake bank message", "asked for otp", "asked for password"],
+      "content": "Phishing is when a fake message, email, or link pretends to be from a bank, company, or official source to trick you into giving away passwords, OTPs, or personal details. No genuine bank or government service will ever ask for your OTP or password over a call, SMS, or email. If you've clicked a suspicious link or shared details, change your passwords immediately, inform your bank if financial accounts are involved, and report it to the National Cyber Crime Helpline (1930) or cybercrime.gov.in. Keep the original message and sender details as evidence."
+    },
+    {
+      "id": "kb-ransomware-data-theft",
+      "title": "My files are locked / my account or device was hacked",
+      "topic": "Online fraud",
+      "category": "Fraud & identity theft",
+      "keywords": ["ransomware", "files locked", "asked for payment to unlock", "data stolen", "hacked my computer", "hacked my account"],
+      "content": "Ransomware locks your files or device and demands payment to unlock them; data theft is when someone gains unauthorized access to your accounts, device, or files and takes information without permission. In either case, avoid paying the demand if possible, since it doesn't guarantee your data will be restored and can encourage further targeting. Disconnect the affected device from the internet if you can, and report the incident to the National Cyber Crime Helpline (1930) or cybercrime.gov.in. If it involves a work device or accounts, inform your organisation's IT or security team as well."
+    },
+    {
+      "id": "kb-workplace-harassment",
+      "title": "I'm being harassed at work",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["workplace harassment", "harassed at work", "colleague harassing me", "boss harassing me", "harassment by senior", "internal committee", "posh act"],
+      "content": "Sexual harassment at the workplace is covered under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (the POSH Act). Every workplace with 10 or more employees is legally required to have an Internal Committee (IC) to receive and act on complaints. You can file a written complaint with your organisation's Internal Committee, and if there isn't one, or you're not comfortable using it, you can approach the Local Committee set up by your district, or file a police complaint. Keep records of incidents, dates, and any witnesses or messages that support your complaint."
+    },
+    {
+      "id": "kb-posh-internal-committee",
+      "title": "How the Internal Committee complaint process works",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["how to file complaint internal committee", "local committee", "posh complaint process", "file complaint workplace harassment"],
+      "content": "A complaint to an Internal Committee (IC) under the POSH Act should generally be made in writing within 3 months of the incident, though the IC can extend this in some circumstances. The IC is required to complete its inquiry within 90 days, and both parties have a right to be heard. If your workplace doesn't have an IC, or has fewer than 10 employees, you can approach the Local Committee constituted by your district for the same purpose. You do not need a lawyer to file this complaint, though you're welcome to consult one."
+    },
+    {
+      "id": "kb-dowry-harassment",
+      "title": "Being harassed or pressured for dowry",
+      "topic": "Domestic cruelty",
+      "category": "Domestic safety",
+      "keywords": ["dowry demand", "dowry harassment", "in-laws demanding money", "asked for dowry", "harassed for dowry"],
+      "content": "Demanding or harassing someone for dowry, before or after marriage, is a criminal offence under Indian law, and cruelty connected to dowry demands can also fall under cruelty by a husband or his relatives. You can approach a Protection Officer (reachable via the Women Helpline, 181) for support including filing a Domestic Incident Report, or file a police complaint directly. If you're able to, keeping records of specific demands (messages, witnesses, any written communication) helps support a complaint, though a lack of such evidence should not stop you from reaching out for support."
+    },
+    {
+      "id": "kb-outraging-modesty-molestation",
+      "title": "Someone touched me inappropriately or without consent",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["molested", "touched me inappropriately", "outraging my modesty", "groped", "inappropriate touch"],
+      "content": "Assault or use of criminal force intended to outrage a woman's modesty — including unwanted touching — is a criminal offence. You can file a police complaint (an FIR must be registered for this, including as a Zero FIR at any police station regardless of where it happened), and police are required to record a woman's statement through a woman officer for such offences. If you're able to, note down details like time, place, and any witnesses as soon as you can, though delayed reporting doesn't prevent you from filing a complaint."
+    },
+    {
+      "id": "kb-sexual-assault-rape",
+      "title": "I was sexually assaulted or raped",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["raped", "sexually assaulted", "attempt to rape", "forced himself on me", "non consensual"],
+      "content": "Rape and sexual assault are serious criminal offences, and you have the right to file a police complaint at any police station, including as a Zero FIR regardless of where the incident happened. You are entitled to free medical examination and treatment at a government hospital, and a woman's statement in such cases must be recorded by a woman police officer. You do not have to make every decision about reporting immediately — the Women Helpline (181) or National Commission for Women (14490) can connect you with a Protection Officer or counsellor who can talk through your options and support you through the process, including in filing a complaint. If you are in immediate danger, call 112."
+    },
+    {
+      "id": "kb-acid-attack",
+      "title": "Acid attack",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["acid attack", "threw acid", "acid thrown at me", "chemical attack"],
+      "content": "Acid attacks are a serious criminal offence with strict penalties under Indian law. If you or someone you know has experienced this, immediate medical treatment is the first priority — victims of acid attacks are entitled to free treatment at both government and private hospitals, which cannot refuse treatment on grounds of payment. You can file a police complaint, including a Zero FIR at any police station, and victim compensation schemes are available through the State Legal Services Authority. The Women Helpline (181) or National Commission for Women (14490) can help connect you to support and legal aid."
+    },
+    {
+      "id": "kb-online-grooming-children",
+      "title": "A child is being groomed or contacted inappropriately online",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["grooming", "adult talking to my child online", "stranger contacting my child", "child being groomed", "predator online"],
+      "content": "Online grooming is when an adult builds a relationship with a child online, often gradually and manipulatively, with the intent to sexually exploit or abuse them. Warning signs include a child receiving excessive attention or gifts from an online contact, being asked to keep a relationship secret, or being pressured to share personal photos or information. If you suspect this is happening, report it to the Child Helpline (1098) or the National Cyber Crime Helpline (1930), which handles cases involving child sexual abuse material specifically, and preserve any messages or account details as evidence without confronting the person directly first, since that can cause them to delete evidence."
+    },
+    {
+      "id": "kb-cyberbullying-children",
+      "title": "A child is being bullied or harassed online",
+      "topic": "Harassment / threats",
+      "category": "Online harm & harassment",
+      "keywords": ["cyberbullying", "child being bullied online", "bullied on social media", "my child is being bullied"],
+      "content": "Cyberbullying — repeated harassment, humiliation, or threats directed at a child online — can be reported to the platform where it's happening (most have reporting tools for harassment/bullying) and to the Child Helpline (1098) for support. If the bullying includes threats, sharing of images, or extortion, it can also be reported to the National Cyber Crime Helpline (1930) or police. Saving screenshots, usernames, and timestamps helps if you need to report it formally."
+    }
+  ]
+}

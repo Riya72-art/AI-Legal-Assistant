@@ -1,0 +1,103 @@
+{
+  "_note": "SAMPLE DATA ONLY. Legal terminology and statute references must be reviewed by a qualified legal professional before this ships — India's criminal code changed from IPC to Bharatiya Nyaya Sanhita (BNS) in 2024, and getting a section reference wrong is a real-world harm on a product like this.",
+  "terms": [
+    {
+      "id": "term-fir",
+      "term": "FIR (First Information Report)",
+      "term_hindi": "प्राथमिकी",
+      "description": "The written record police create when they first learn of a cognizable offence. Filing an FIR is usually the formal starting point of a police investigation.",
+      "category": "General question"
+    },
+    {
+      "id": "term-zero-fir",
+      "term": "Zero FIR",
+      "term_hindi": "जीरो एफआईआर",
+      "description": "An FIR that can be filed at any police station, regardless of where the incident happened, and is later transferred to the station with jurisdiction. Useful when you're unsure which station covers the location.",
+      "category": "General question"
+    },
+    {
+      "id": "term-cognizable",
+      "term": "Cognizable offence",
+      "term_hindi": null,
+      "description": "A category of offence serious enough that police can register an FIR and start investigating without needing a magistrate's prior permission.",
+      "category": "General question"
+    },
+    {
+      "id": "term-dir",
+      "term": "Domestic Incident Report (DIR)",
+      "term_hindi": null,
+      "description": "A report prepared by a Protection Officer or service provider under domestic violence law, documenting an incident. It's used to support an application for protection, residence, or other orders.",
+      "category": "Domestic safety"
+    },
+    {
+      "id": "term-protection-officer",
+      "term": "Protection Officer",
+      "term_hindi": "संरक्षण अधिकारी",
+      "description": "A government-appointed officer who assists people facing domestic violence — helping file a Domestic Incident Report, connecting to shelters and medical aid, and assisting with court applications.",
+      "category": "Domestic safety"
+    },
+    {
+      "id": "term-protection-order",
+      "term": "Protection order",
+      "term_hindi": null,
+      "description": "A court order that can prohibit someone from contacting you, entering your home or workplace, or committing further acts of violence or harassment.",
+      "category": "Domestic safety"
+    },
+    {
+      "id": "term-cyberstalking",
+      "term": "Cyberstalking",
+      "term_hindi": null,
+      "description": "Repeatedly monitoring, contacting, or tracking someone online in a way that causes fear or distress — for example, repeated unwanted messages, tracking someone's location or online activity, or monitoring their social media obsessively despite being asked to stop.",
+      "category": "Online harm & harassment"
+    },
+    {
+      "id": "term-image-abuse",
+      "term": "Image-based abuse",
+      "term_hindi": null,
+      "description": "Sharing, or threatening to share, intimate images of someone without their consent, including images that have been digitally altered. This is a criminal offence in India.",
+      "category": "Online harm & harassment"
+    },
+    {
+      "id": "term-intermediary-takedown",
+      "term": "Intermediary takedown request",
+      "term_hindi": null,
+      "description": "A formal request to a platform (social media site, app, host) to remove content, based on IT Rules that require platforms to act on complaints about non-consensual intimate imagery and certain other harmful content within a set time.",
+      "category": "Online harm & harassment"
+    },
+    {
+      "id": "term-anticipatory-bail",
+      "term": "Anticipatory bail",
+      "term_hindi": "अग्रिम जमानत",
+      "description": "A court order sought in advance of arrest, that says a person should be released on bail if arrested for a specific accusation. This is a separate concept from bail sought after arrest.",
+      "category": "General question"
+    },
+    {
+      "id": "term-platform-report",
+      "term": "Platform report",
+      "term_hindi": "प्लेटफ़ॉर्म शिकायत",
+      "description": "A report made through a social media, messaging, or hosting service's own safety process. Keep the report confirmation and reference number with your other evidence.",
+      "category": "Online harm & harassment"
+    },
+    {
+      "id": "term-account-impersonation",
+      "term": "Online impersonation",
+      "term_hindi": "ऑनलाइन प्रतिरूपण",
+      "description": "Using another person's name, photograph, or profile details online in a way that misleads others or causes harm. Save the profile URL and screenshots before reporting it.",
+      "category": "Online harm & harassment"
+    },
+    {
+      "id": "term-internal-committee",
+      "term": "Internal Committee (IC)",
+      "term_hindi": "आंतरिक समिति",
+      "description": "A workplace committee that receives and handles complaints of sexual harassment under the workplace prevention law. Employees can ask their organisation how to contact it.",
+      "category": "Domestic safety"
+    },
+    {
+      "id": "term-chain-of-custody",
+      "term": "Evidence record",
+      "term_hindi": "साक्ष्य रिकॉर्ड",
+      "description": "A simple note of when and how evidence was collected, stored, or shared. Keeping original files unchanged and recording dates can help preserve context.",
+      "category": "General question"
+    }
+  ]
+}

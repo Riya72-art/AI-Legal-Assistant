@@ -1,0 +1,58 @@
+{
+  "_note": "SAMPLE DATA. Verify counselling contacts before production use.",
+  "principles": [
+    {
+      "id": "p-safety",
+      "title": "Safety",
+      "description": "Physical and emotional safety come first, for the person seeking support and for anyone helping them."
+    },
+    {
+      "id": "p-trust",
+      "title": "Trustworthiness & transparency",
+      "description": "Being clear about what happens next, and not creating obligations someone didn't agree to."
+    },
+    {
+      "id": "p-choice",
+      "title": "Choice",
+      "description": "The person decides the pace and the steps, wherever possible — support should not remove their agency."
+    },
+    {
+      "id": "p-collab",
+      "title": "Collaboration",
+      "description": "Sharing power rather than deciding for someone what they need."
+    },
+    {
+      "id": "p-empowerment",
+      "title": "Empowerment",
+      "description": "Building on a person's existing strengths and choices rather than treating them only as someone in crisis."
+    }
+  ],
+  "counselling": [
+    {
+      "id": "c-vandrevala",
+      "name": "Vandrevala Foundation Helpline",
+      "number": "1860-2662-345",
+      "description": "Free, confidential mental health support and counselling.",
+      "hours": "24/7"
+    },
+    {
+      "id": "c-icall",
+      "name": "iCall Psychosocial Helpline",
+      "number": "9152987821",
+      "description": "Counselling support from trained mental health professionals, by phone or email.",
+      "hours": "Mon–Sat, 10am–8pm"
+    }
+  ],
+  "community": [
+    {
+      "id": "comm-support-circle",
+      "title": "Starting a support conversation with someone you trust",
+      "description": "Guidance for telling one person — a friend, family member, or colleague — what's been happening, at whatever level of detail feels safe."
+    },
+    {
+      "id": "comm-family-neighbourhood",
+      "title": "When harm affects a household or neighbourhood",
+      "description": "Pointers for community elders, local organisations, or family members trying to support someone without taking over their decisions."
+    }
+  ]
+}
