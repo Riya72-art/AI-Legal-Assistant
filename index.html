@@ -591,6 +591,71 @@
   .eligibility-result.show { display: block; }
   .eligibility-result.eligible { background: var(--sage); color: var(--sage-text); }
   .eligibility-result.maybe { background: #FBF1DC; color: #6B5321; }
+  /* ================================================================
+     Drafting Desk
+     ================================================================ */
+  .dd-card { max-width: 1120px; padding: 30px; }
+  .dd-progress { display: flex; gap: 10px; margin-bottom: 28px; }
+  .dd-progress span { flex: 1; height: 5px; border-radius: 8px; background: var(--line); }
+  .dd-progress span.active { background: var(--rust); }
+  .dd-step { display: none; }
+  .dd-step.active { display: block; }
+  .dd-step-title { font-weight: 700; font-size: 16px; margin: 0 0 6px; }
+  .dd-step-sub { font-size: 13px; color: var(--ink-soft); margin: 0 0 18px; line-height: 1.5; }
+  .dd-template-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .dd-template {
+    text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px; cursor: pointer; color: var(--ink); display: block; width: 100%;
+  }
+  .dd-template:hover { background: var(--card-alt); }
+  .dd-template.selected { border: 2px solid var(--rust-deep); background: var(--card-alt); padding: 21px; }
+  .dd-template-icon { color: var(--rust-deep); margin-bottom: 16px; }
+  .dd-template-title { font-family: Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.25; margin-bottom: 8px; }
+  .dd-template-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; margin: 0; }
+  .dd-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+  .dd-field.full { grid-column: 1 / -1; }
+  .dd-label { display: block; font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+  .dd-hint { font-size: 12.5px; color: var(--ink-soft); margin: 0 0 6px; }
+  .dd-tip {
+    background: #FBF1DC; border: 1px solid #EBD9A8; color: #6B5321; border-radius: 10px;
+    padding: 12px 14px; font-size: 13px; line-height: 1.55; margin-bottom: 18px; display: none;
+  }
+  .dd-tip.show { display: block; }
+  .dd-actions {
+    display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;
+    border-top: 1px solid var(--line); margin-top: 26px; padding-top: 20px;
+  }
+  .dd-actions-right { display: flex; gap: 10px; flex-wrap: wrap; }
+  .dd-btn {
+    display: inline-flex; align-items: center; gap: 8px; border-radius: 24px; padding: 11px 20px;
+    font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid var(--line);
+    background: var(--card); color: var(--ink);
+  }
+  .dd-btn.primary { background: var(--rust); border-color: var(--rust); color: #fff; }
+  .dd-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .dd-preview {
+    border: 1px solid var(--line); border-radius: 10px; background: #fff; color: #222;
+    padding: 24px 28px; max-height: 480px; overflow-y: auto; margin: 0;
+    font-family: Georgia, 'Times New Roman', serif; font-size: 14.5px; line-height: 1.7;
+    white-space: pre-wrap; word-wrap: break-word;
+  }
+  .dd-disclaimer {
+    background: var(--sage); border-radius: 12px; padding: 20px 24px; margin-top: 24px;
+    max-width: 1120px; display: flex; gap: 14px; color: var(--sage-text);
+  }
+  .dd-disclaimer b { display: block; font-family: Georgia, serif; font-size: 16px; margin-bottom: 4px; }
+  .dd-disclaimer p { margin: 0; font-size: 13.5px; line-height: 1.6; }
+  @media (max-width: 860px) {
+    .dd-template-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .dd-card { padding: 18px; }
+    .dd-template-grid, .dd-form-grid { grid-template-columns: 1fr; }
+    .dd-actions { flex-direction: column-reverse; align-items: stretch; }
+    .dd-actions-right { flex-direction: column; }
+    .dd-btn { justify-content: center; min-height: 46px; }
+    .dd-preview { padding: 16px; font-size: 13.5px; }
+  }
 </style>
 </head>
 <body>
@@ -609,6 +674,10 @@
     <button class="nav-btn" data-page="complaint">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/></svg>
       Make a complaint
+    </button>
+    <button class="nav-btn" data-page="drafting">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11a2.1 2.1 0 0 0-3-3L5 16z"/><path d="M14 7l3 3"/></svg>
+      Drafting Desk
     </button>
     <button class="nav-btn" data-page="helplines">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l1.5 4.5L8 10a11 11 0 0 0 6 6l1.5-2.5L20 15v4a1 1 0 0 1-1 1C10.7 20 4 13.3 4 5a1 1 0 0 1 1-1z"/></svg>
@@ -1038,6 +1107,85 @@
             <option value="ready_to_share">Ready to share</option>
           </select>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DRAFTING DESK PAGE ============ -->
+  <section class="page" id="page-drafting">
+    <div class="eyebrow">Put it in writing</div>
+    <h1 style="font-size:46px; line-height:1.12; margin:0 0 20px; max-width:760px;">Draft a formal legal notice in three steps.</h1>
+    <p class="sans" style="color:var(--ink-soft); max-width:700px; font-size:16px; line-height:1.65; margin:0 0 36px;">
+      Choose a template, fill in what you know, then review and download. This creates a document for you to check &mdash; sending it, filing it, or consulting a lawyer first is your choice.
+    </p>
+
+    <div class="card dd-card sans">
+      <div class="dd-progress" id="dd-progress"><span class="active"></span><span></span><span></span></div>
+
+      <!-- Step 1 -->
+      <div class="dd-step active" id="dd-step-1">
+        <p class="dd-step-title">Select a template</p>
+        <div class="dd-template-grid" id="dd-template-grid"></div>
+        <div class="dd-actions">
+          <span></span>
+          <div class="dd-actions-right">
+            <button type="button" class="dd-btn primary" id="dd-to-step2" disabled>Continue &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="dd-step" id="dd-step-2">
+        <p class="dd-step-title">Enter the details</p>
+        <p class="dd-step-sub" id="dd-template-note"></p>
+        <div class="dd-tip" id="dd-tip"></div>
+        <div class="dd-form-grid">
+          <div class="dd-field"><label class="dd-label" for="dd-you-name">Your full name</label><input class="nd-input" id="dd-you-name" /></div>
+          <div class="dd-field"><label class="dd-label" for="dd-you-addr">Your address</label><input class="nd-input" id="dd-you-addr" /></div>
+          <div class="dd-field"><label class="dd-label" for="dd-them-name">Other party's name</label><input class="nd-input" id="dd-them-name" /></div>
+          <div class="dd-field"><label class="dd-label" for="dd-them-addr">Other party's address</label><input class="nd-input" id="dd-them-addr" /></div>
+          <div class="dd-field"><label class="dd-label" for="dd-date">Date of the incident / agreement</label><input class="nd-input" type="date" id="dd-date" /></div>
+          <div class="dd-field"><label class="dd-label" for="dd-amount">Amount involved (if any, in &#8377;)</label><input class="nd-input" id="dd-amount" placeholder="e.g. 50,000" inputmode="decimal" /></div>
+          <div class="dd-field full">
+            <label class="dd-label" for="dd-what">What happened</label>
+            <p class="dd-hint">Describe the situation and grievance in your own words.</p>
+            <textarea class="nd-textarea" id="dd-what" style="min-height:110px; resize:vertical;"></textarea>
+          </div>
+          <div class="dd-field full">
+            <label class="dd-label" for="dd-demand">What you want them to do</label>
+            <p class="dd-hint">e.g. refund the amount, stop contact, remove the content, vacate within 15 days.</p>
+            <textarea class="nd-textarea" id="dd-demand" style="min-height:80px; resize:vertical;"></textarea>
+          </div>
+          <div class="dd-field"><label class="dd-label" for="dd-days">Response period (days)</label><input class="nd-input" type="number" min="1" id="dd-days" value="15" /></div>
+        </div>
+        <div class="field-error" id="dd-error" style="display:none;"></div>
+        <div class="dd-actions">
+          <button type="button" class="dd-btn" id="dd-back-1">&larr; Back</button>
+          <div class="dd-actions-right">
+            <button type="button" class="dd-btn primary" id="dd-to-step3" disabled>Continue &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="dd-step" id="dd-step-3">
+        <p class="dd-step-title">Preview &amp; download</p>
+        <pre class="dd-preview" id="dd-preview" data-no-translate="1"></pre>
+        <div class="dd-actions">
+          <button type="button" class="dd-btn" id="dd-back-2">&larr; Back</button>
+          <div class="dd-actions-right">
+            <button type="button" class="dd-btn" id="dd-download">&#8681; Download .txt</button>
+            <button type="button" class="dd-btn primary" id="dd-print">Print / Save as PDF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dd-disclaimer sans">
+      <span style="margin-top:2px;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6z"/></svg></span>
+      <div>
+        <b>This is a starting draft, not a filed legal document.</b>
+        <p>Nothing is sent or saved from here. Review the wording carefully, and where possible have a lawyer or your nearest District Legal Services Authority (toll-free: 15100) check it before you send it.</p>
       </div>
     </div>
   </section>
@@ -1806,7 +1954,7 @@
     var node;
     while ((node = walker.nextNode())) {
       var parent = node.parentElement;
-      if (!parent || parent.closest("script, style, select, option") || !node.nodeValue.trim()) continue;
+      if (!parent || parent.closest("script, style, select, option, [data-no-translate]") || !node.nodeValue.trim()) continue;
       if (!node._nyayaOriginal) {
         var leading = node.nodeValue.match(/^\s*/)[0];
         var trailing = node.nodeValue.match(/\s*$/)[0];
@@ -3727,6 +3875,220 @@
         result.innerHTML = "<strong>Free aid may not apply by income or category alone — but you still have options.</strong><br>DLSAs often help with mediation, court-fee waivers, or referrals even outside strict free-aid eligibility, and Nyaya Desk's Helplines and Rights pages remain available regardless.";
       }
       result.classList.add("show");
+    });
+  })();
+  // ================================================================
+  // Drafting Desk — template -> details -> preview/download
+  // Nothing is stored or sent anywhere; everything runs in the page.
+  // ================================================================
+  (function () {
+    var root = document.getElementById("page-drafting");
+    if (!root) return;
+
+    var TEMPLATES = {
+      tenancy: {
+        title: "Tenancy / Security Deposit Refund",
+        desc: "Legal notice to a landlord or tenant over a security deposit or tenancy dispute.",
+        icon: '<path d="M6 3h8l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/>',
+        subject: "Legal notice regarding security deposit / tenancy dispute",
+        basis: "the terms of the tenancy / rent agreement and the law applicable to tenancies in your state",
+        warning: "failing which I shall be constrained to initiate appropriate legal proceedings, including a civil suit for recovery with interest and costs",
+        note: "Drafted with reference to the tenancy agreement and applicable state rent law.",
+        tip: "Mention the agreement date, monthly rent, deposit amount paid, and the date you vacated (or were asked to vacate) in \u201cWhat happened\u201d."
+      },
+      cheque: {
+        title: "Cheque Bounce Notice",
+        desc: "Statutory notice for a dishonoured cheque, as required before filing under the Negotiable Instruments Act.",
+        icon: '<rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M3 10h18M7 15h4"/>',
+        subject: "Cheque Bounce Notice \u2014 Notice under the Negotiable Instruments Act, 1881, S.138",
+        basis: "Section 138 of the Negotiable Instruments Act, 1881",
+        warning: "failing which I shall be constrained to initiate criminal proceedings against you under Section 138 of the Negotiable Instruments Act, 1881, besides civil remedies, at your risk as to costs and consequences",
+        note: "Drafted with reference to Negotiable Instruments Act, 1881, S.138. Fill in as much as you can.",
+        tip: "Under S.138 the notice must be sent within 30 days of receiving the bank\u2019s cheque-return memo, and the drawer gets 15 days to pay. Put the cheque number, cheque date, bank, and reason for return in \u201cWhat happened\u201d. The response period below is set to at least 15 days for this template.",
+        minDays: 15
+      },
+      recovery: {
+        title: "Recovery of Money / Cheating",
+        desc: "Notice demanding repayment of money owed, or for a cheating / fraud grievance.",
+        icon: '<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 7h8M8 12h1M12 12h1M16 12h1M8 16h1M12 16h1M16 16h1"/>',
+        subject: "Legal notice for recovery of money / cheating",
+        basis: "the facts below, the law of contract, and (where the facts disclose deception) Section 318 of the Bharatiya Nyaya Sanhita, 2023",
+        warning: "failing which I shall be constrained to initiate civil proceedings for recovery with interest and costs, and to lodge a criminal complaint where the facts so warrant",
+        note: "Drafted with reference to contract law and BNS S.318 (cheating).",
+        tip: "Include payment proof details (UPI/transaction IDs, dates, bank) in \u201cWhat happened\u201d. For online fraud in the last few hours or days, also call 1930 or report at cybercrime.gov.in first."
+      },
+      harassment: {
+        title: "Harassment / Cyberstalking Notice",
+        desc: "Notice to an individual to cease harassment, stalking, or online contact.",
+        icon: '<path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6z"/><rect x="10" y="11" width="4" height="3.5" rx="0.6"/><path d="M10.5 11V9.5a1.5 1.5 0 0 1 3 0V11"/>',
+        subject: "Legal notice to cease harassment / stalking / unwanted contact",
+        basis: "the Bharatiya Nyaya Sanhita, 2023 (including, where applicable, Sections 78, 79 and 351) and the Information Technology Act, 2000",
+        warning: "failing which I shall be constrained to lodge a police complaint / FIR and to seek all available legal remedies, including protective orders",
+        note: "Drafted with reference to BNS (stalking, intimidation) and the IT Act, 2000, where applicable.",
+        tip: "Before sending a notice, save screenshots, links and call logs somewhere the other person cannot reach. If you feel unsafe, a police complaint or helpline call may be a better first step than a notice \u2014 see the Helplines page. Section 78 (stalking) applies where the person targeted is a woman."
+      },
+      employment: {
+        title: "Employment Dispute",
+        desc: "Notice for unpaid wages, wrongful termination, or a workplace grievance.",
+        icon: '<rect x="3" y="8" width="18" height="12" rx="1.5"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
+        subject: "Legal notice regarding unpaid wages / termination / workplace grievance",
+        basis: "my appointment terms and the labour and employment laws applicable to my employment",
+        warning: "failing which I shall be constrained to approach the appropriate labour authority or court for relief",
+        note: "Drafted with reference to employment terms and applicable labour law.",
+        tip: "Mention your designation, joining date, last working day, salary, and exactly which dues are pending. Attach your offer letter and payslips when you send the notice."
+      },
+      general: {
+        title: "General Legal Notice",
+        desc: "A flexible template for a grievance not covered above.",
+        icon: '<path d="M4 20l4-1 11-11a2.1 2.1 0 0 0-3-3L5 16z"/><path d="M14 7l3 3"/>',
+        subject: "Legal notice",
+        basis: "the facts set out below and the law applicable to them",
+        warning: "failing which I shall be constrained to take such legal action as may be advised, at your risk as to costs and consequences",
+        note: "A flexible template \u2014 no specific statute is cited.",
+        tip: ""
+      }
+    };
+
+    var chosen = null;
+    var $ = function (id) { return document.getElementById(id); };
+
+    // ---- Step 1: template cards ----
+    $("dd-template-grid").innerHTML = Object.keys(TEMPLATES).map(function (key) {
+      var t = TEMPLATES[key];
+      return '<button type="button" class="dd-template" data-key="' + key + '">' +
+        '<div class="dd-template-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + t.icon + '</svg></div>' +
+        '<div class="dd-template-title">' + t.title + '</div>' +
+        '<p class="dd-template-desc">' + t.desc + '</p>' +
+      '</button>';
+    }).join("");
+
+    root.querySelectorAll(".dd-template").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        chosen = btn.getAttribute("data-key");
+        root.querySelectorAll(".dd-template").forEach(function (b) { b.classList.toggle("selected", b === btn); });
+        $("dd-to-step2").disabled = false;
+      });
+    });
+
+    // ---- Step navigation ----
+    function showStep(n) {
+      [1, 2, 3].forEach(function (i) { $("dd-step-" + i).classList.toggle("active", i === n); });
+      $("dd-progress").querySelectorAll("span").forEach(function (s, i) { s.classList.toggle("active", i < n); });
+      root.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    $("dd-to-step2").addEventListener("click", function () {
+      if (!chosen) return;
+      var t = TEMPLATES[chosen];
+      $("dd-template-note").textContent = "Template: " + t.title + " \u2014 " + t.note;
+      var tip = $("dd-tip");
+      tip.textContent = t.tip || "";
+      tip.classList.toggle("show", !!t.tip);
+      if (t.minDays && (parseInt($("dd-days").value, 10) || 0) < t.minDays) $("dd-days").value = t.minDays;
+      checkStep2();
+      showStep(2);
+    });
+    $("dd-back-1").addEventListener("click", function () { showStep(1); });
+    $("dd-back-2").addEventListener("click", function () { showStep(2); });
+
+    // ---- Step 2: validation (name, other party, what happened are the minimum) ----
+    var required = ["dd-you-name", "dd-them-name", "dd-what"];
+    function checkStep2() {
+      var ok = required.every(function (id) { return $(id).value.trim().length > 0; });
+      $("dd-to-step3").disabled = !ok;
+      $("dd-error").style.display = "none";
+    }
+    ["dd-you-name", "dd-you-addr", "dd-them-name", "dd-them-addr", "dd-date", "dd-amount", "dd-what", "dd-demand", "dd-days"].forEach(function (id) {
+      $(id).addEventListener("input", checkStep2);
+    });
+
+    // ---- Build the notice text ----
+    function formatAmount(raw) {
+      var n = parseFloat(String(raw || "").replace(/[^0-9.]/g, ""));
+      if (!isFinite(n) || n <= 0) return "";
+      return "\u20B9" + n.toLocaleString("en-IN", { maximumFractionDigits: 2 });
+    }
+    function formatDate(iso) {
+      if (!iso) return "";
+      var d = new Date(iso + "T00:00:00");
+      if (isNaN(d)) return "";
+      return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+    }
+    function val(id, placeholder) { return $(id).value.trim() || placeholder; }
+
+    function buildNotice() {
+      var t = TEMPLATES[chosen];
+      var you = val("dd-you-name", "[Your full name]");
+      var youAddr = val("dd-you-addr", "[Your address]");
+      var them = val("dd-them-name", "[Other party's name]");
+      var themAddr = val("dd-them-addr", "[Other party's address]");
+      var what = val("dd-what", "[Describe what happened]");
+      var demand = val("dd-demand", "[state what you want them to do]");
+      var days = parseInt($("dd-days").value, 10);
+      if (!days || days < 1) days = 15;
+      if (t.minDays && days < t.minDays) days = t.minDays;
+      var incidentDate = formatDate($("dd-date").value);
+      var amount = formatAmount($("dd-amount").value);
+      var today = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+
+      var paras = [];
+      paras.push("I, " + you + ", residing at " + youAddr + ", issue this legal notice to you in respect of the matter set out below.");
+      paras.push("The facts are as follows" + (incidentDate ? " (relating to events on or about " + incidentDate + ")" : "") + ":\n" + what);
+      if (amount) paras.push("The amount involved in this matter is " + amount + ".");
+      paras.push("This notice is issued with reference to " + t.basis + ".");
+      paras.push("I therefore call upon you to " + demand + " within " + days + " days of receiving this notice, " + t.warning + ".");
+      paras.push("This notice is issued without prejudice to my other rights and remedies, all of which are expressly reserved. I have retained a copy for my records.");
+
+      var out = [];
+      out.push("LEGAL NOTICE", "");
+      out.push("To,", them, themAddr, "");
+      out.push("From,", you, youAddr, "");
+      out.push("Date: " + today, "");
+      out.push("Subject: " + t.subject, "");
+      out.push("Madam/Sir,", "");
+      paras.forEach(function (p, i) { out.push((i + 1) + ". " + p, ""); });
+      out.push("Yours faithfully,", "", "", you);
+      return out.join("\n");
+    }
+
+    $("dd-to-step3").addEventListener("click", function () {
+      if ($("dd-to-step3").disabled) return;
+      $("dd-preview").textContent = buildNotice();
+      showStep(3);
+    });
+
+    // ---- Download .txt ----
+    $("dd-download").addEventListener("click", function () {
+      var text = $("dd-preview").textContent;
+      var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "legal-notice-" + (chosen || "draft") + ".txt";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    });
+
+    // ---- Print / Save as PDF (via a hidden iframe so the rest of the page isn't printed) ----
+    $("dd-print").addEventListener("click", function () {
+      var text = $("dd-preview").textContent;
+      var frame = document.createElement("iframe");
+      frame.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;";
+      document.body.appendChild(frame);
+      var doc = frame.contentWindow.document;
+      doc.open();
+      doc.write('<!doctype html><html><head><meta charset="utf-8"><title>Legal Notice</title>' +
+        '<style>body{font-family:Georgia,"Times New Roman",serif;font-size:13pt;line-height:1.6;margin:2.2cm;color:#000;}' +
+        'pre{font-family:inherit;white-space:pre-wrap;word-wrap:break-word;margin:0;}</style></head><body><pre id="n"></pre></body></html>');
+      doc.close();
+      doc.getElementById("n").textContent = text;
+      setTimeout(function () {
+        frame.contentWindow.focus();
+        frame.contentWindow.print();
+        setTimeout(function () { document.body.removeChild(frame); }, 1500);
+      }, 150);
     });
   })();
 </script>
